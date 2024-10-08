@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: onboardingAssesComplex
+  description: onboardingAssesComplex
+  annotations:
+    argocd/app-selector: rht-gitops.com/janus-argocd=onboardingAssesComplex
+    backstage.io/kubernetes-namespace: orchestrator-gitops
+    backstage.io/kubernetes-id: onboardingAssesComplex-ci
+    janus-idp.io/tekton: onboardingAssesComplex
+    github.com/project-slug: gabriel-farache/onboardingAssesComplex
+spec:
+  type: workflow-project
+  system: system:default/janus-orchestrator
+  lifecycle: development
+  owner: user:default/gabriel-farache

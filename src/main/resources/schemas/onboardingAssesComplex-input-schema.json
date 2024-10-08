@@ -1,0 +1,14 @@
+{
+  "$id": "classpath:/schemas/onboardingAssesComplex-schema.json",
+  "title": "Data Input Schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "sampleText": {
+      "title": "A sample text",
+      "type": "string",
+      "description": "Sample text data",
+      "ui:widget": "textarea"
+    }
+  }
+}
